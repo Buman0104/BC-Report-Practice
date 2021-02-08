@@ -11,6 +11,67 @@
       <rd:DataSourceID>6b4ed8a8-34d1-440f-83cd-e947d7cdc6f0</rd:DataSourceID>
     </DataSource>
   </DataSources>
+  <DataSets>
+    <DataSet Name="DataSet_Result">
+      <Query>
+        <DataSourceName>DataSource</DataSourceName>
+        <CommandText />
+      </Query>
+      <Fields>
+        <Field Name="iNo">
+          <DataField>iNo</DataField>
+        </Field>
+        <Field Name="pDate">
+          <DataField>pDate</DataField>
+        </Field>
+        <Field Name="IQuantity">
+          <DataField>IQuantity</DataField>
+        </Field>
+        <Field Name="IQuantityFormat">
+          <DataField>IQuantityFormat</DataField>
+        </Field>
+        <Field Name="CostAmountActual">
+          <DataField>CostAmountActual</DataField>
+        </Field>
+        <Field Name="CostAmountActualFormat">
+          <DataField>CostAmountActualFormat</DataField>
+        </Field>
+        <Field Name="SalesAmountActual">
+          <DataField>SalesAmountActual</DataField>
+        </Field>
+        <Field Name="SalesAmountActualFormat">
+          <DataField>SalesAmountActualFormat</DataField>
+        </Field>
+        <Field Name="EntryType">
+          <DataField>EntryType</DataField>
+        </Field>
+        <Field Name="LastYear">
+          <DataField>LastYear</DataField>
+        </Field>
+        <Field Name="LastMonth">
+          <DataField>LastMonth</DataField>
+        </Field>
+        <Field Name="AvSales">
+          <DataField>AvSales</DataField>
+        </Field>
+        <Field Name="AvSalesFormat">
+          <DataField>AvSalesFormat</DataField>
+        </Field>
+        <Field Name="Description">
+          <DataField>Description</DataField>
+        </Field>
+        <Field Name="CostingMethod">
+          <DataField>CostingMethod</DataField>
+        </Field>
+        <Field Name="StandardCost">
+          <DataField>StandardCost</DataField>
+        </Field>
+        <Field Name="StandardCostFormat">
+          <DataField>StandardCostFormat</DataField>
+        </Field>
+      </Fields>
+    </DataSet>
+  </DataSets>
   <ReportSections>
     <ReportSection>
       <Body>
@@ -1420,6 +1481,12 @@
       </Page>
     </ReportSection>
   </ReportSections>
+  <ReportParametersLayout>
+    <GridLayoutDefinition>
+      <NumberOfColumns>4</NumberOfColumns>
+      <NumberOfRows>2</NumberOfRows>
+    </GridLayoutDefinition>
+  </ReportParametersLayout>
   <Code>Public Function BlankZero(ByVal Value As Decimal)
     if Value = 0 then
         Return ""
@@ -1459,65 +1526,4 @@ End Function
   <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
   <rd:ReportUnitType>Inch</rd:ReportUnitType>
   <rd:ReportID>0eeb6585-38ae-40f1-885b-8d50088d51b4</rd:ReportID>
-  <DataSets>
-    <DataSet Name="DataSet_Result">
-      <Fields>
-        <Field Name="iNo">
-          <DataField>iNo</DataField>
-        </Field>
-        <Field Name="pDate">
-          <DataField>pDate</DataField>
-        </Field>
-        <Field Name="IQuantity">
-          <DataField>IQuantity</DataField>
-        </Field>
-        <Field Name="IQuantityFormat">
-          <DataField>IQuantityFormat</DataField>
-        </Field>
-        <Field Name="CostAmountActual">
-          <DataField>CostAmountActual</DataField>
-        </Field>
-        <Field Name="CostAmountActualFormat">
-          <DataField>CostAmountActualFormat</DataField>
-        </Field>
-        <Field Name="SalesAmountActual">
-          <DataField>SalesAmountActual</DataField>
-        </Field>
-        <Field Name="SalesAmountActualFormat">
-          <DataField>SalesAmountActualFormat</DataField>
-        </Field>
-        <Field Name="EntryType">
-          <DataField>EntryType</DataField>
-        </Field>
-        <Field Name="LastYear">
-          <DataField>LastYear</DataField>
-        </Field>
-        <Field Name="LastMonth">
-          <DataField>LastMonth</DataField>
-        </Field>
-        <Field Name="AvSales">
-          <DataField>AvSales</DataField>
-        </Field>
-        <Field Name="AvSalesFormat">
-          <DataField>AvSalesFormat</DataField>
-        </Field>
-        <Field Name="Description">
-          <DataField>Description</DataField>
-        </Field>
-        <Field Name="CostingMethod">
-          <DataField>CostingMethod</DataField>
-        </Field>
-        <Field Name="StandardCost">
-          <DataField>StandardCost</DataField>
-        </Field>
-        <Field Name="StandardCostFormat">
-          <DataField>StandardCostFormat</DataField>
-        </Field>
-      </Fields>
-      <Query>
-        <DataSourceName>DataSource</DataSourceName>
-        <CommandText />
-      </Query>
-    </DataSet>
-  </DataSets>
 </Report>
