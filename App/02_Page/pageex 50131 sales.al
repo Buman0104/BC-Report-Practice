@@ -9,7 +9,7 @@ pageextension 50131 RunReport extends "Sales Order"
     {
         addlast("&Print")
         {
-            action("Run Report")
+            action("RunMyReport")
             {
                 ApplicationArea = All;
                 Promoted = true;

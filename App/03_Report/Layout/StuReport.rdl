@@ -198,7 +198,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Fields!Result.Value</Value>
+                                  <Value>=SUM(Fields!Result.Value)</Value>
                                   <Style />
                                 </TextRun>
                               </TextRuns>
@@ -256,21 +256,21 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="Textbox4">
+                        <Textbox Name="Total_result">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Sum(Fields!Result.Value)</Value>
+                                  <Value>=Fields!Total_result.Value</Value>
                                   <Style />
                                 </TextRun>
                               </TextRuns>
                               <Style />
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>Textbox4</rd:DefaultName>
+                          <rd:DefaultName>Total_result</rd:DefaultName>
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>

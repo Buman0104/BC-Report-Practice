@@ -49,7 +49,7 @@ page 50110 StudentList
                     ApplicationArea = All;
 
                 }
-                field("Total result"; rec.Total_result)
+                /*field("Total result"; rec.Total_result)
                 {
                     ApplicationArea = All;
 
@@ -58,7 +58,7 @@ page 50110 StudentList
                 {
                     ApplicationArea = All;
 
-                }
+                }*/
             }
         }
         area(Factboxes)

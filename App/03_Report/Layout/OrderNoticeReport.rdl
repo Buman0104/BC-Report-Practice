@@ -11,190 +11,6 @@
       <rd:DataSourceID>16a0753a-9fb5-4b8e-ba37-56f7e70ae290</rd:DataSourceID>
     </DataSource>
   </DataSources>
-  <DataSets>
-    <DataSet Name="DataSet_Result">
-      <Query>
-        <DataSourceName>DataSource</DataSourceName>
-        <CommandText />
-      </Query>
-      <Fields>
-        <Field Name="Bill_to_Name">
-          <DataField>Bill_to_Name</DataField>
-        </Field>
-        <Field Name="External_Document_No_">
-          <DataField>External_Document_No_</DataField>
-        </Field>
-        <Field Name="Sell_to_Customer_No_">
-          <DataField>Sell_to_Customer_No_</DataField>
-        </Field>
-        <Field Name="Order_Date">
-          <DataField>Order_Date</DataField>
-        </Field>
-        <Field Name="Shipment_Date">
-          <DataField>Shipment_Date</DataField>
-        </Field>
-        <Field Name="HeaderNo">
-          <DataField>HeaderNo</DataField>
-        </Field>
-        <Field Name="LineCount">
-          <DataField>LineCount</DataField>
-        </Field>
-        <Field Name="GroupCount">
-          <DataField>GroupCount</DataField>
-        </Field>
-        <Field Name="Create_User_ID">
-          <DataField>Create_User_ID</DataField>
-        </Field>
-        <Field Name="UserName">
-          <DataField>UserName</DataField>
-        </Field>
-        <Field Name="TotalPage">
-          <DataField>TotalPage</DataField>
-        </Field>
-        <Field Name="CurrencyCode">
-          <DataField>CurrencyCode</DataField>
-        </Field>
-        <Field Name="LCYCode">
-          <DataField>LCYCode</DataField>
-        </Field>
-        <Field Name="QuoteNo">
-          <DataField>QuoteNo</DataField>
-        </Field>
-        <Field Name="Salesperson_Code">
-          <DataField>Salesperson_Code</DataField>
-        </Field>
-        <Field Name="SalesPerson">
-          <DataField>SalesPerson</DataField>
-        </Field>
-        <Field Name="ShipmentMethod">
-          <DataField>ShipmentMethod</DataField>
-        </Field>
-        <Field Name="TextCustomer">
-          <DataField>TextCustomer</DataField>
-        </Field>
-        <Field Name="TextCurrency">
-          <DataField>TextCurrency</DataField>
-        </Field>
-        <Field Name="TextCustomerNo">
-          <DataField>TextCustomerNo</DataField>
-        </Field>
-        <Field Name="TextCustomerPO">
-          <DataField>TextCustomerPO</DataField>
-        </Field>
-        <Field Name="TextIndustryDesc">
-          <DataField>TextIndustryDesc</DataField>
-        </Field>
-        <Field Name="TextOrderDate">
-          <DataField>TextOrderDate</DataField>
-        </Field>
-        <Field Name="TextOrderNo">
-          <DataField>TextOrderNo</DataField>
-        </Field>
-        <Field Name="TextQouteNo">
-          <DataField>TextQouteNo</DataField>
-        </Field>
-        <Field Name="TextSalesPerson">
-          <DataField>TextSalesPerson</DataField>
-        </Field>
-        <Field Name="TextSalesRegion">
-          <DataField>TextSalesRegion</DataField>
-        </Field>
-        <Field Name="TextShipDate">
-          <DataField>TextShipDate</DataField>
-        </Field>
-        <Field Name="TextShipMethod">
-          <DataField>TextShipMethod</DataField>
-        </Field>
-        <Field Name="TextTitle">
-          <DataField>TextTitle</DataField>
-        </Field>
-        <Field Name="TextCustItemNo">
-          <DataField>TextCustItemNo</DataField>
-        </Field>
-        <Field Name="TextCustItemName">
-          <DataField>TextCustItemName</DataField>
-        </Field>
-        <Field Name="TextItemName">
-          <DataField>TextItemName</DataField>
-        </Field>
-        <Field Name="TextSpec">
-          <DataField>TextSpec</DataField>
-        </Field>
-        <Field Name="TextQuantity">
-          <DataField>TextQuantity</DataField>
-        </Field>
-        <Field Name="TextUOM">
-          <DataField>TextUOM</DataField>
-        </Field>
-        <Field Name="TextUnitPrice">
-          <DataField>TextUnitPrice</DataField>
-        </Field>
-        <Field Name="TextPack">
-          <DataField>TextPack</DataField>
-        </Field>
-        <Field Name="TextBox">
-          <DataField>TextBox</DataField>
-        </Field>
-        <Field Name="TextItemNo">
-          <DataField>TextItemNo</DataField>
-        </Field>
-        <Field Name="TextManager">
-          <DataField>TextManager</DataField>
-        </Field>
-        <Field Name="TextPurchaser">
-          <DataField>TextPurchaser</DataField>
-        </Field>
-        <Field Name="TextCreater">
-          <DataField>TextCreater</DataField>
-        </Field>
-        <Field Name="TextTotal">
-          <DataField>TextTotal</DataField>
-        </Field>
-        <Field Name="TextPrintDate">
-          <DataField>TextPrintDate</DataField>
-        </Field>
-        <Field Name="TextPrintTime">
-          <DataField>TextPrintTime</DataField>
-        </Field>
-        <Field Name="TextPageNumber">
-          <DataField>TextPageNumber</DataField>
-        </Field>
-        <Field Name="LineNo">
-          <DataField>LineNo</DataField>
-        </Field>
-        <Field Name="Quantity">
-          <DataField>Quantity</DataField>
-        </Field>
-        <Field Name="QuantityFormat">
-          <DataField>QuantityFormat</DataField>
-        </Field>
-        <Field Name="UOM">
-          <DataField>UOM</DataField>
-        </Field>
-        <Field Name="UnitPrice">
-          <DataField>UnitPrice</DataField>
-        </Field>
-        <Field Name="UnitPriceFormat">
-          <DataField>UnitPriceFormat</DataField>
-        </Field>
-        <Field Name="ItemNo">
-          <DataField>ItemNo</DataField>
-        </Field>
-        <Field Name="Pack">
-          <DataField>Pack</DataField>
-        </Field>
-        <Field Name="Box">
-          <DataField>Box</DataField>
-        </Field>
-        <Field Name="CommentLine_No_">
-          <DataField>CommentLine_No_</DataField>
-        </Field>
-        <Field Name="Comment">
-          <DataField>Comment</DataField>
-        </Field>
-      </Fields>
-    </DataSet>
-  </DataSets>
   <ReportSections>
     <ReportSection>
       <Body>
@@ -3168,12 +2984,6 @@
       </Page>
     </ReportSection>
   </ReportSections>
-  <ReportParametersLayout>
-    <GridLayoutDefinition>
-      <NumberOfColumns>4</NumberOfColumns>
-      <NumberOfRows>2</NumberOfRows>
-    </GridLayoutDefinition>
-  </ReportParametersLayout>
   <Code>Public Function BlankZero(ByVal Value As Decimal)
     if Value = 0 then
         Return ""
@@ -3245,4 +3055,188 @@ End Function
   <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
   <rd:ReportUnitType>Inch</rd:ReportUnitType>
   <rd:ReportID>0eeb6585-38ae-40f1-885b-8d50088d51b4</rd:ReportID>
+  <DataSets>
+    <DataSet Name="DataSet_Result">
+      <Fields>
+        <Field Name="Bill_to_Name">
+          <DataField>Bill_to_Name</DataField>
+        </Field>
+        <Field Name="External_Document_No_">
+          <DataField>External_Document_No_</DataField>
+        </Field>
+        <Field Name="Sell_to_Customer_No_">
+          <DataField>Sell_to_Customer_No_</DataField>
+        </Field>
+        <Field Name="Order_Date">
+          <DataField>Order_Date</DataField>
+        </Field>
+        <Field Name="Shipment_Date">
+          <DataField>Shipment_Date</DataField>
+        </Field>
+        <Field Name="HeaderNo">
+          <DataField>HeaderNo</DataField>
+        </Field>
+        <Field Name="LineCount">
+          <DataField>LineCount</DataField>
+        </Field>
+        <Field Name="GroupCount">
+          <DataField>GroupCount</DataField>
+        </Field>
+        <Field Name="Create_User_ID">
+          <DataField>Create_User_ID</DataField>
+        </Field>
+        <Field Name="UserName">
+          <DataField>UserName</DataField>
+        </Field>
+        <Field Name="TotalPage">
+          <DataField>TotalPage</DataField>
+        </Field>
+        <Field Name="CurrencyCode">
+          <DataField>CurrencyCode</DataField>
+        </Field>
+        <Field Name="LCYCode">
+          <DataField>LCYCode</DataField>
+        </Field>
+        <Field Name="QuoteNo">
+          <DataField>QuoteNo</DataField>
+        </Field>
+        <Field Name="Salesperson_Code">
+          <DataField>Salesperson_Code</DataField>
+        </Field>
+        <Field Name="SalesPerson">
+          <DataField>SalesPerson</DataField>
+        </Field>
+        <Field Name="ShipmentMethod">
+          <DataField>ShipmentMethod</DataField>
+        </Field>
+        <Field Name="TextCustomer">
+          <DataField>TextCustomer</DataField>
+        </Field>
+        <Field Name="TextCurrency">
+          <DataField>TextCurrency</DataField>
+        </Field>
+        <Field Name="TextCustomerNo">
+          <DataField>TextCustomerNo</DataField>
+        </Field>
+        <Field Name="TextCustomerPO">
+          <DataField>TextCustomerPO</DataField>
+        </Field>
+        <Field Name="TextIndustryDesc">
+          <DataField>TextIndustryDesc</DataField>
+        </Field>
+        <Field Name="TextOrderDate">
+          <DataField>TextOrderDate</DataField>
+        </Field>
+        <Field Name="TextOrderNo">
+          <DataField>TextOrderNo</DataField>
+        </Field>
+        <Field Name="TextQouteNo">
+          <DataField>TextQouteNo</DataField>
+        </Field>
+        <Field Name="TextSalesPerson">
+          <DataField>TextSalesPerson</DataField>
+        </Field>
+        <Field Name="TextSalesRegion">
+          <DataField>TextSalesRegion</DataField>
+        </Field>
+        <Field Name="TextShipDate">
+          <DataField>TextShipDate</DataField>
+        </Field>
+        <Field Name="TextShipMethod">
+          <DataField>TextShipMethod</DataField>
+        </Field>
+        <Field Name="TextTitle">
+          <DataField>TextTitle</DataField>
+        </Field>
+        <Field Name="TextCustItemNo">
+          <DataField>TextCustItemNo</DataField>
+        </Field>
+        <Field Name="TextCustItemName">
+          <DataField>TextCustItemName</DataField>
+        </Field>
+        <Field Name="TextItemName">
+          <DataField>TextItemName</DataField>
+        </Field>
+        <Field Name="TextSpec">
+          <DataField>TextSpec</DataField>
+        </Field>
+        <Field Name="TextQuantity">
+          <DataField>TextQuantity</DataField>
+        </Field>
+        <Field Name="TextUOM">
+          <DataField>TextUOM</DataField>
+        </Field>
+        <Field Name="TextUnitPrice">
+          <DataField>TextUnitPrice</DataField>
+        </Field>
+        <Field Name="TextPack">
+          <DataField>TextPack</DataField>
+        </Field>
+        <Field Name="TextBox">
+          <DataField>TextBox</DataField>
+        </Field>
+        <Field Name="TextItemNo">
+          <DataField>TextItemNo</DataField>
+        </Field>
+        <Field Name="TextManager">
+          <DataField>TextManager</DataField>
+        </Field>
+        <Field Name="TextPurchaser">
+          <DataField>TextPurchaser</DataField>
+        </Field>
+        <Field Name="TextCreater">
+          <DataField>TextCreater</DataField>
+        </Field>
+        <Field Name="TextTotal">
+          <DataField>TextTotal</DataField>
+        </Field>
+        <Field Name="TextPrintDate">
+          <DataField>TextPrintDate</DataField>
+        </Field>
+        <Field Name="TextPrintTime">
+          <DataField>TextPrintTime</DataField>
+        </Field>
+        <Field Name="TextPageNumber">
+          <DataField>TextPageNumber</DataField>
+        </Field>
+        <Field Name="LineNo">
+          <DataField>LineNo</DataField>
+        </Field>
+        <Field Name="Quantity">
+          <DataField>Quantity</DataField>
+        </Field>
+        <Field Name="QuantityFormat">
+          <DataField>QuantityFormat</DataField>
+        </Field>
+        <Field Name="UOM">
+          <DataField>UOM</DataField>
+        </Field>
+        <Field Name="UnitPrice">
+          <DataField>UnitPrice</DataField>
+        </Field>
+        <Field Name="UnitPriceFormat">
+          <DataField>UnitPriceFormat</DataField>
+        </Field>
+        <Field Name="ItemNo">
+          <DataField>ItemNo</DataField>
+        </Field>
+        <Field Name="Pack">
+          <DataField>Pack</DataField>
+        </Field>
+        <Field Name="Box">
+          <DataField>Box</DataField>
+        </Field>
+        <Field Name="CommentLine_No_">
+          <DataField>CommentLine_No_</DataField>
+        </Field>
+        <Field Name="Comment">
+          <DataField>Comment</DataField>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>DataSource</DataSourceName>
+        <CommandText />
+      </Query>
+    </DataSet>
+  </DataSets>
 </Report>
