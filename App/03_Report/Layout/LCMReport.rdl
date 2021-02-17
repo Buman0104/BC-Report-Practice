@@ -11,67 +11,6 @@
       <rd:DataSourceID>6b4ed8a8-34d1-440f-83cd-e947d7cdc6f0</rd:DataSourceID>
     </DataSource>
   </DataSources>
-  <DataSets>
-    <DataSet Name="DataSet_Result">
-      <Query>
-        <DataSourceName>DataSource</DataSourceName>
-        <CommandText />
-      </Query>
-      <Fields>
-        <Field Name="iNo">
-          <DataField>iNo</DataField>
-        </Field>
-        <Field Name="pDate">
-          <DataField>pDate</DataField>
-        </Field>
-        <Field Name="IQuantity">
-          <DataField>IQuantity</DataField>
-        </Field>
-        <Field Name="IQuantityFormat">
-          <DataField>IQuantityFormat</DataField>
-        </Field>
-        <Field Name="CostAmountActual">
-          <DataField>CostAmountActual</DataField>
-        </Field>
-        <Field Name="CostAmountActualFormat">
-          <DataField>CostAmountActualFormat</DataField>
-        </Field>
-        <Field Name="SalesAmountActual">
-          <DataField>SalesAmountActual</DataField>
-        </Field>
-        <Field Name="SalesAmountActualFormat">
-          <DataField>SalesAmountActualFormat</DataField>
-        </Field>
-        <Field Name="EntryType">
-          <DataField>EntryType</DataField>
-        </Field>
-        <Field Name="LastYear">
-          <DataField>LastYear</DataField>
-        </Field>
-        <Field Name="LastMonth">
-          <DataField>LastMonth</DataField>
-        </Field>
-        <Field Name="AvSales">
-          <DataField>AvSales</DataField>
-        </Field>
-        <Field Name="AvSalesFormat">
-          <DataField>AvSalesFormat</DataField>
-        </Field>
-        <Field Name="Description">
-          <DataField>Description</DataField>
-        </Field>
-        <Field Name="CostingMethod">
-          <DataField>CostingMethod</DataField>
-        </Field>
-        <Field Name="StandardCost">
-          <DataField>StandardCost</DataField>
-        </Field>
-        <Field Name="StandardCostFormat">
-          <DataField>StandardCostFormat</DataField>
-        </Field>
-      </Fields>
-    </DataSet>
-  </DataSets>
   <ReportSections>
     <ReportSection>
       <Body>
@@ -80,10 +19,13 @@
             <TablixBody>
               <TablixColumns>
                 <TablixColumn>
-                  <Width>1.02083in</Width>
+                  <Width>0.77083in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>0.51852in</Width>
+                  <Width>0.93971in</Width>
+                </TablixColumn>
+                <TablixColumn>
+                  <Width>1in</Width>
                 </TablixColumn>
                 <TablixColumn>
                   <Width>0.7339in</Width>
@@ -152,6 +94,36 @@
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>Textbox18</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox3">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>Cost Amount</Value>
+                                  <Style />
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox3</rd:DefaultName>
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>
@@ -352,21 +324,51 @@
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="IQuantity1">
+                        <Textbox Name="InvoicedQuantity">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Fields!IQuantity.Value</Value>
+                                  <Value>=Fields!InvoicedQuantity.Value</Value>
                                   <Style />
                                 </TextRun>
                               </TextRuns>
                               <Style />
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>IQuantity1</rd:DefaultName>
+                          <rd:DefaultName>InvoicedQuantity</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="CostAmount">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Fields!CostAmount.Value</Value>
+                                  <Style />
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>CostAmount</rd:DefaultName>
                           <Style>
                             <Border>
                               <Color>LightGrey</Color>
@@ -389,7 +391,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=IIF(Fields!CostingMethod.Value = "Standard", Fields!StandardCost.Value, Abs(Fields!CostAmountActual.Value)/Abs(Fields!IQuantity.Value))</Value>
+                                  <Value>=IIF(Cstr(Fields!CostingMethod.Value) Like "Standard", Fields!StandardCost.Value, Abs(Fields!CostAmountActual.Value)/Abs(Fields!InvoicedQuantity.Value))</Value>
                                   <Style />
                                 </TextRun>
                               </TextRuns>
@@ -543,6 +545,7 @@
                 <TablixMember />
                 <TablixMember />
                 <TablixMember />
+                <TablixMember />
               </TablixMembers>
             </TablixColumnHierarchy>
             <TablixRowHierarchy>
@@ -654,10 +657,20 @@
                   </TablixMembers>
                 </TablixMember>
                 <TablixMember>
-                  <Group Name="iNo" />
+                  <Group Name="iNo">
+                    <Filters>
+                      <Filter>
+                        <FilterExpression>=Cstr(Fields!Description.Value)</FilterExpression>
+                        <Operator>GreaterThan</Operator>
+                        <FilterValues>
+                          <FilterValue>""</FilterValue>
+                        </FilterValues>
+                      </Filter>
+                    </Filters>
+                  </Group>
                   <SortExpressions>
                     <SortExpression>
-                      <Value>=Fields!iNo.Value</Value>
+                      <Value>=Fields!ItemNo.Value</Value>
                     </SortExpression>
                   </SortExpressions>
                   <TablixMembers>
@@ -665,21 +678,21 @@
                       <TablixHeader>
                         <Size>0.69444in</Size>
                         <CellContents>
-                          <Textbox Name="pDate1">
+                          <Textbox Name="PostingDate">
                             <CanGrow>true</CanGrow>
                             <KeepTogether>true</KeepTogether>
                             <Paragraphs>
                               <Paragraph>
                                 <TextRuns>
                                   <TextRun>
-                                    <Value>=Fields!pDate.Value</Value>
+                                    <Value>=Fields!PostingDate.Value</Value>
                                     <Style />
                                   </TextRun>
                                 </TextRuns>
                                 <Style />
                               </Paragraph>
                             </Paragraphs>
-                            <rd:DefaultName>pDate1</rd:DefaultName>
+                            <rd:DefaultName>PostingDate</rd:DefaultName>
                             <Style>
                               <Border>
                                 <Color>LightGrey</Color>
@@ -731,21 +744,21 @@
                               <TablixHeader>
                                 <Size>0.74306in</Size>
                                 <CellContents>
-                                  <Textbox Name="iNo2">
+                                  <Textbox Name="ItemNo">
                                     <CanGrow>true</CanGrow>
                                     <KeepTogether>true</KeepTogether>
                                     <Paragraphs>
                                       <Paragraph>
                                         <TextRuns>
                                           <TextRun>
-                                            <Value>=Fields!iNo.Value</Value>
+                                            <Value>=Fields!ItemNo.Value</Value>
                                             <Style />
                                           </TextRun>
                                         </TextRuns>
                                         <Style />
                                       </Paragraph>
                                     </Paragraphs>
-                                    <rd:DefaultName>iNo2</rd:DefaultName>
+                                    <rd:DefaultName>ItemNo</rd:DefaultName>
                                     <Style>
                                       <Border>
                                         <Color>LightGrey</Color>
@@ -772,10 +785,10 @@
               </TablixMembers>
             </TablixRowHierarchy>
             <DataSetName>DataSet_Result</DataSetName>
-            <Top>0.83556in</Top>
+            <Top>0.97445in</Top>
             <Left>0in</Left>
             <Height>0.45138in</Height>
-            <Width>7.32882in</Width>
+            <Width>8.5in</Width>
             <Style>
               <Border>
                 <Style>None</Style>
@@ -786,13 +799,13 @@
             <TablixBody>
               <TablixColumns>
                 <TablixColumn>
-                  <Width>1.00694in</Width>
+                  <Width>0.84976in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>1.03473in</Width>
+                  <Width>0.95834in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>0.81944in</Width>
+                  <Width>0.72222in</Width>
                 </TablixColumn>
               </TablixColumns>
               <TablixRows>
@@ -903,8 +916,10 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Round(IIF(Month(Fields!pDate.Value) = Fields!LastMonth.Value and Year(Fields!pDate.Value) = Fields!LastYear.Value, Abs(Sum(Fields!SalesAmountActual.Value))  / Abs(Sum(Fields!IQuantity.Value)), 0), 2)</Value>
-                                  <Style />
+                                  <Value>=IIF(Month(Fields!PostingDate.Value) = Fields!LastMonth.Value and Year(Fields!PostingDate.Value) = Fields!LastYear.Value, CDbl(Abs(Sum(Fields!SalesAmountActual.Value)))  / CDbl(Abs(Sum(Fields!InvoicedQuantity.Value))), 0)</Value>
+                                  <Style>
+                                    <Format>n2</Format>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style />
@@ -933,8 +948,10 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Sum(Fields!SalesAmountActual.Value)</Value>
-                                  <Style />
+                                  <Value>=CDbl(Sum(Fields!SalesAmountActual.Value))</Value>
+                                  <Style>
+                                    <Format>n2</Format>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style />
@@ -1001,7 +1018,7 @@
               <TablixMembers>
                 <TablixMember>
                   <TablixHeader>
-                    <Size>0.69444in</Size>
+                    <Size>0.65044in</Size>
                     <CellContents>
                       <Textbox Name="Textbox12">
                         <CanGrow>true</CanGrow>
@@ -1034,7 +1051,7 @@
                   <TablixMembers>
                     <TablixMember>
                       <TablixHeader>
-                        <Size>1in</Size>
+                        <Size>0.83102in</Size>
                         <CellContents>
                           <Textbox Name="Textbox19">
                             <CanGrow>true</CanGrow>
@@ -1067,7 +1084,7 @@
                       <TablixMembers>
                         <TablixMember>
                           <TablixHeader>
-                            <Size>1.16193in</Size>
+                            <Size>0.82851in</Size>
                             <CellContents>
                               <Textbox Name="Textbox23">
                                 <CanGrow>true</CanGrow>
@@ -1076,7 +1093,7 @@
                                   <Paragraph>
                                     <TextRuns>
                                       <TextRun>
-                                        <Value>Invoiced Quantity</Value>
+                                        <Value>Quantity</Value>
                                         <Style />
                                       </TextRun>
                                     </TextRuns>
@@ -1100,7 +1117,7 @@
                           <TablixMembers>
                             <TablixMember>
                               <TablixHeader>
-                                <Size>0.7177in</Size>
+                                <Size>0.89583in</Size>
                                 <CellContents>
                                   <Textbox Name="Textbox27">
                                     <CanGrow>true</CanGrow>
@@ -1133,7 +1150,7 @@
                               <TablixMembers>
                                 <TablixMember>
                                   <TablixHeader>
-                                    <Size>0.90971in</Size>
+                                    <Size>0.92383in</Size>
                                     <CellContents>
                                       <Textbox Name="Textbox30">
                                         <CanGrow>true</CanGrow>
@@ -1188,6 +1205,10 @@
                                                 <Color>LightGrey</Color>
                                                 <Style>Solid</Style>
                                               </Border>
+                                              <LeftBorder>
+                                                <Color>Red</Color>
+                                                <Width>2pt</Width>
+                                              </LeftBorder>
                                               <PaddingLeft>2pt</PaddingLeft>
                                               <PaddingRight>2pt</PaddingRight>
                                               <PaddingTop>2pt</PaddingTop>
@@ -1197,7 +1218,42 @@
                                         </CellContents>
                                       </TablixHeader>
                                       <TablixMembers>
-                                        <TablixMember />
+                                        <TablixMember>
+                                          <TablixHeader>
+                                            <Size>0.72894in</Size>
+                                            <CellContents>
+                                              <Textbox Name="Textbox2">
+                                                <CanGrow>true</CanGrow>
+                                                <KeepTogether>true</KeepTogether>
+                                                <Paragraphs>
+                                                  <Paragraph>
+                                                    <TextRuns>
+                                                      <TextRun>
+                                                        <Value>Entry Type</Value>
+                                                        <Style />
+                                                      </TextRun>
+                                                    </TextRuns>
+                                                    <Style />
+                                                  </Paragraph>
+                                                </Paragraphs>
+                                                <rd:DefaultName>Textbox2</rd:DefaultName>
+                                                <Style>
+                                                  <Border>
+                                                    <Color>LightGrey</Color>
+                                                    <Style>Solid</Style>
+                                                  </Border>
+                                                  <PaddingLeft>2pt</PaddingLeft>
+                                                  <PaddingRight>2pt</PaddingRight>
+                                                  <PaddingTop>2pt</PaddingTop>
+                                                  <PaddingBottom>2pt</PaddingBottom>
+                                                </Style>
+                                              </Textbox>
+                                            </CellContents>
+                                          </TablixHeader>
+                                          <TablixMembers>
+                                            <TablixMember />
+                                          </TablixMembers>
+                                        </TablixMember>
                                       </TablixMembers>
                                     </TablixMember>
                                   </TablixMembers>
@@ -1212,27 +1268,27 @@
                   <KeepWithGroup>After</KeepWithGroup>
                 </TablixMember>
                 <TablixMember>
-                  <Group Name="iNo1">
+                  <Group Name="ItemNo">
                     <GroupExpressions>
-                      <GroupExpression>=Fields!iNo.Value</GroupExpression>
+                      <GroupExpression>=Fields!ItemNo.Value</GroupExpression>
                     </GroupExpressions>
                   </Group>
                   <SortExpressions>
                     <SortExpression>
-                      <Value>=Fields!iNo.Value</Value>
+                      <Value>=Fields!ItemNo.Value</Value>
                     </SortExpression>
                   </SortExpressions>
                   <TablixHeader>
-                    <Size>0.69444in</Size>
+                    <Size>0.65044in</Size>
                     <CellContents>
-                      <Textbox Name="iNo1">
+                      <Textbox Name="ItemNo1">
                         <CanGrow>true</CanGrow>
                         <KeepTogether>true</KeepTogether>
                         <Paragraphs>
                           <Paragraph>
                             <TextRuns>
                               <TextRun>
-                                <Value>=Fields!iNo.Value</Value>
+                                <Value>=Fields!ItemNo.Value</Value>
                                 <Style />
                               </TextRun>
                             </TextRuns>
@@ -1241,7 +1297,7 @@
                             </Style>
                           </Paragraph>
                         </Paragraphs>
-                        <rd:DefaultName>iNo1</rd:DefaultName>
+                        <rd:DefaultName>ItemNo1</rd:DefaultName>
                         <Style>
                           <Border>
                             <Color>LightGrey</Color>
@@ -1258,7 +1314,7 @@
                   <TablixMembers>
                     <TablixMember>
                       <TablixHeader>
-                        <Size>1in</Size>
+                        <Size>0.83102in</Size>
                         <CellContents>
                           <Textbox Name="Description">
                             <CanGrow>true</CanGrow>
@@ -1291,7 +1347,7 @@
                       <TablixMembers>
                         <TablixMember>
                           <TablixHeader>
-                            <Size>1.16193in</Size>
+                            <Size>0.82851in</Size>
                             <CellContents>
                               <Textbox Name="IQuantity">
                                 <CanGrow>true</CanGrow>
@@ -1300,8 +1356,10 @@
                                   <Paragraph>
                                     <TextRuns>
                                       <TextRun>
-                                        <Value>=SUM(Fields!IQuantity.Value)</Value>
-                                        <Style />
+                                        <Value>=CDbl(SUM(Fields!Quantity.Value))</Value>
+                                        <Style>
+                                          <Format>n2</Format>
+                                        </Style>
                                       </TextRun>
                                     </TextRuns>
                                     <Style />
@@ -1324,7 +1382,7 @@
                           <TablixMembers>
                             <TablixMember>
                               <TablixHeader>
-                                <Size>0.7177in</Size>
+                                <Size>0.89583in</Size>
                                 <CellContents>
                                   <Textbox Name="Textbox29">
                                     <CanGrow>true</CanGrow>
@@ -1333,8 +1391,10 @@
                                       <Paragraph>
                                         <TextRuns>
                                           <TextRun>
-                                            <Value>=IIF(Fields!CostingMethod.Value = "Standard", Fields!StandardCost.Value, Abs(Fields!CostAmountActual.Value)/Abs(Fields!IQuantity.Value))</Value>
-                                            <Style />
+                                            <Value>=IIF(Fields!CostingMethod.Value = "Standard", CDbl(Fields!StandardCost.Value),CDbl( Abs(Sum(Fields!CostAmount.Value)))/CDbl(Abs(Sum(Fields!InvoicedQuantity.Value))))</Value>
+                                            <Style>
+                                              <Format>n2</Format>
+                                            </Style>
                                           </TextRun>
                                         </TextRuns>
                                         <Style />
@@ -1357,7 +1417,7 @@
                               <TablixMembers>
                                 <TablixMember>
                                   <TablixHeader>
-                                    <Size>0.90971in</Size>
+                                    <Size>0.92383in</Size>
                                     <CellContents>
                                       <Textbox Name="Textbox31">
                                         <CanGrow>true</CanGrow>
@@ -1366,8 +1426,10 @@
                                           <Paragraph>
                                             <TextRuns>
                                               <TextRun>
-                                                <Value>=Sum(Fields!CostAmountActual.Value)</Value>
-                                                <Style />
+                                                <Value>=Sum(Fields!CostAmount.Value)</Value>
+                                                <Style>
+                                                  <Format>n2</Format>
+                                                </Style>
                                               </TextRun>
                                             </TextRuns>
                                             <Style />
@@ -1389,23 +1451,37 @@
                                   </TablixHeader>
                                   <TablixMembers>
                                     <TablixMember>
-                                      <Group Name="pDate">
+                                      <Group Name="PostingDate">
                                         <GroupExpressions>
-                                          <GroupExpression>=Month(Fields!pDate.Value)</GroupExpression>
+                                          <GroupExpression>=Month(Fields!PostingDate.Value)</GroupExpression>
                                         </GroupExpressions>
                                         <Filters>
                                           <Filter>
-                                            <FilterExpression>=Cstr(Year(Fields!pDate.Value)) &amp; "/" &amp; Cstr(Month(Fields!pDate.Value))</FilterExpression>
+                                            <FilterExpression>=Cstr(Year(Fields!PostingDate.Value)) &amp; "/" &amp; Cstr(Month(Fields!PostingDate.Value))</FilterExpression>
                                             <Operator>Equal</Operator>
                                             <FilterValues>
                                               <FilterValue>=Cstr(Fields!LastYear.Value) &amp; "/" &amp; Cstr(Fields!LastMonth.Value)</FilterValue>
+                                            </FilterValues>
+                                          </Filter>
+                                          <Filter>
+                                            <FilterExpression>=Fields!EntryType.Value</FilterExpression>
+                                            <Operator>Equal</Operator>
+                                            <FilterValues>
+                                              <FilterValue>Sale</FilterValue>
+                                            </FilterValues>
+                                          </Filter>
+                                          <Filter>
+                                            <FilterExpression>=Fields!InvoicedQuantity.Value</FilterExpression>
+                                            <Operator>LessThan</Operator>
+                                            <FilterValues>
+                                              <FilterValue DataType="Integer">0</FilterValue>
                                             </FilterValues>
                                           </Filter>
                                         </Filters>
                                       </Group>
                                       <SortExpressions>
                                         <SortExpression>
-                                          <Value>=Fields!pDate.Value</Value>
+                                          <Value>=Fields!PostingDate.Value</Value>
                                         </SortExpression>
                                       </SortExpressions>
                                       <TablixMembers>
@@ -1420,8 +1496,10 @@
                                                   <Paragraph>
                                                     <TextRuns>
                                                       <TextRun>
-                                                        <Value>=Sum(Fields!IQuantity.Value)</Value>
-                                                        <Style />
+                                                        <Value>=Sum(CDbl(Fields!InvoicedQuantity.Value))</Value>
+                                                        <Style>
+                                                          <Format>n2</Format>
+                                                        </Style>
                                                       </TextRun>
                                                     </TextRuns>
                                                     <Style />
@@ -1433,6 +1511,10 @@
                                                     <Color>LightGrey</Color>
                                                     <Style>Solid</Style>
                                                   </Border>
+                                                  <LeftBorder>
+                                                    <Color>Red</Color>
+                                                    <Width>2pt</Width>
+                                                  </LeftBorder>
                                                   <PaddingLeft>2pt</PaddingLeft>
                                                   <PaddingRight>2pt</PaddingRight>
                                                   <PaddingTop>2pt</PaddingTop>
@@ -1442,7 +1524,42 @@
                                             </CellContents>
                                           </TablixHeader>
                                           <TablixMembers>
-                                            <TablixMember />
+                                            <TablixMember>
+                                              <TablixHeader>
+                                                <Size>0.72894in</Size>
+                                                <CellContents>
+                                                  <Textbox Name="EntryType1">
+                                                    <CanGrow>true</CanGrow>
+                                                    <KeepTogether>true</KeepTogether>
+                                                    <Paragraphs>
+                                                      <Paragraph>
+                                                        <TextRuns>
+                                                          <TextRun>
+                                                            <Value>=Fields!EntryType.Value</Value>
+                                                            <Style />
+                                                          </TextRun>
+                                                        </TextRuns>
+                                                        <Style />
+                                                      </Paragraph>
+                                                    </Paragraphs>
+                                                    <rd:DefaultName>EntryType1</rd:DefaultName>
+                                                    <Style>
+                                                      <Border>
+                                                        <Color>LightGrey</Color>
+                                                        <Style>Solid</Style>
+                                                      </Border>
+                                                      <PaddingLeft>2pt</PaddingLeft>
+                                                      <PaddingRight>2pt</PaddingRight>
+                                                      <PaddingTop>2pt</PaddingTop>
+                                                      <PaddingBottom>2pt</PaddingBottom>
+                                                    </Style>
+                                                  </Textbox>
+                                                </CellContents>
+                                              </TablixHeader>
+                                              <TablixMembers>
+                                                <TablixMember />
+                                              </TablixMembers>
+                                            </TablixMember>
                                           </TablixMembers>
                                         </TablixMember>
                                       </TablixMembers>
@@ -1462,8 +1579,8 @@
             <DataSetName>DataSet_Result</DataSetName>
             <Top>0in</Top>
             <Left>0in</Left>
-            <Height>0.64583in</Height>
-            <Width>8.45602in</Width>
+            <Height>0.64584in</Height>
+            <Width>8.5in</Width>
             <ZIndex>1</ZIndex>
             <Style>
               <Border>
@@ -1472,7 +1589,7 @@
             </Style>
           </Tablix>
         </ReportItems>
-        <Height>2.02305in</Height>
+        <Height>1.42583in</Height>
         <Style />
       </Body>
       <Width>8.5in</Width>
@@ -1481,12 +1598,6 @@
       </Page>
     </ReportSection>
   </ReportSections>
-  <ReportParametersLayout>
-    <GridLayoutDefinition>
-      <NumberOfColumns>4</NumberOfColumns>
-      <NumberOfRows>2</NumberOfRows>
-    </GridLayoutDefinition>
-  </ReportParametersLayout>
   <Code>Public Function BlankZero(ByVal Value As Decimal)
     if Value = 0 then
         Return ""
@@ -1526,4 +1637,77 @@ End Function
   <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
   <rd:ReportUnitType>Inch</rd:ReportUnitType>
   <rd:ReportID>0eeb6585-38ae-40f1-885b-8d50088d51b4</rd:ReportID>
+  <DataSets>
+    <DataSet Name="DataSet_Result">
+      <Fields>
+        <Field Name="ItemNo">
+          <DataField>ItemNo</DataField>
+        </Field>
+        <Field Name="PostingDate">
+          <DataField>PostingDate</DataField>
+        </Field>
+        <Field Name="InvoicedQuantity">
+          <DataField>InvoicedQuantity</DataField>
+        </Field>
+        <Field Name="InvoicedQuantityFormat">
+          <DataField>InvoicedQuantityFormat</DataField>
+        </Field>
+        <Field Name="CostAmountActual">
+          <DataField>CostAmountActual</DataField>
+        </Field>
+        <Field Name="CostAmountActualFormat">
+          <DataField>CostAmountActualFormat</DataField>
+        </Field>
+        <Field Name="SalesAmountActual">
+          <DataField>SalesAmountActual</DataField>
+        </Field>
+        <Field Name="SalesAmountActualFormat">
+          <DataField>SalesAmountActualFormat</DataField>
+        </Field>
+        <Field Name="EntryType">
+          <DataField>EntryType</DataField>
+        </Field>
+        <Field Name="LastYear">
+          <DataField>LastYear</DataField>
+        </Field>
+        <Field Name="LastMonth">
+          <DataField>LastMonth</DataField>
+        </Field>
+        <Field Name="AverageSales">
+          <DataField>AverageSales</DataField>
+        </Field>
+        <Field Name="AverageSalesFormat">
+          <DataField>AverageSalesFormat</DataField>
+        </Field>
+        <Field Name="Quantity">
+          <DataField>Quantity</DataField>
+        </Field>
+        <Field Name="QuantityFormat">
+          <DataField>QuantityFormat</DataField>
+        </Field>
+        <Field Name="CostAmount">
+          <DataField>CostAmount</DataField>
+        </Field>
+        <Field Name="CostAmountFormat">
+          <DataField>CostAmountFormat</DataField>
+        </Field>
+        <Field Name="Description">
+          <DataField>Description</DataField>
+        </Field>
+        <Field Name="CostingMethod">
+          <DataField>CostingMethod</DataField>
+        </Field>
+        <Field Name="StandardCost">
+          <DataField>StandardCost</DataField>
+        </Field>
+        <Field Name="StandardCostFormat">
+          <DataField>StandardCostFormat</DataField>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>DataSource</DataSourceName>
+        <CommandText />
+      </Query>
+    </DataSet>
+  </DataSets>
 </Report>
