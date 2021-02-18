@@ -49,7 +49,7 @@ report 50104 LCMReport
             {
                 DataItemLinkReference = ValueEntry;
                 DataItemLink = "No." = field("Item No.");
-                DataItemTableView = sorting("No.");
+                DataItemTableView = sorting("No.");  // Set DataItemTableView to hide this dataitem in request page
                 column(Description; Description)
                 {
 
@@ -74,7 +74,7 @@ report 50104 LCMReport
                     grecValueEntry.SetFilter("Document Type", '= Sales Invoice');
                     if gCutDate <> 0D then
                         grecValueEntry.SetFilter("Posting Date", '<= %1', gCutDate);
-                    grecValueEntry.SetCurrentKey("Posting Date");
+                    grecValueEntry.SetCurrentKey("Posting Date");      // Set current key first so you can run the SetAscending function
                     grecValueEntry.SetAscending("Posting Date", true); // Sort value entry by posting date
                     if grecValueEntry.FindLast() then begin            // Find the latest sales record each item to get the last month
                         gLastYear := DATE2DMY(grecValueEntry."Posting Date", 3);
@@ -85,7 +85,7 @@ report 50104 LCMReport
             trigger OnPreDataItem()
             begin
                 if gCutDate <> 0D then
-                    ValueEntry.SetFilter("Posting Date", '<= %1', gCutDate);
+                    ValueEntry.SetFilter("Posting Date", '<= %1', gCutDate);  // Filter the whole data item before it start
             end;
         }
     }
