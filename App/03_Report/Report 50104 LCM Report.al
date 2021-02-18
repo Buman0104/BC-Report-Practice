@@ -8,8 +8,6 @@ report 50104 LCMReport
     {
         dataitem(ItemLedgerEntry; "Item Ledger Entry")
         {
-            //DataItemTableView = WHERE("Entry Type" = const(Sale));
-
             column(ItemNo; "Item No.")
             {
 
@@ -89,28 +87,12 @@ report 50104 LCMReport
                         gLastYear := DATE2DMY(grecItemLedger."Posting Date", 3);
                         gLastMonth := Date2DMY(grecItemLedger."Posting Date", 2);
                     end;
-
-                    /*Clear(grecItemLedger);
-                    MonthInvoice := 0;
-                    MonthSales := 0;
-                    grecItemLedger.SetRange("Item No.", "No.");
-                    grecItemLedger.SetRange("Posting Date", DMY2Date(1, gLastMonth, gLastYear), DMY2Date(31, gLastMonth, gLastYear));
-                    grecItemLedger.SetFilter("Entry Type", '= Sale');
-                    if grecItemLedger.FindSet() then begin
-                        repeat
-                            MonthSales := grecItemLedger."Sales Amount (Actual)" + MonthSales;
-                            MonthInvoice := grecItemLedger."Invoiced Quantity" + MonthInvoice;
-                        until grecItemLedger.Next() = 0
-                    end;
-                    if MonthInvoice <> 0 then
-                        gAvSales := MonthSales;*/
                 end;
             }
             trigger OnPreDataItem()
             begin
                 if gCutDate <> 0D then
                     ItemLedgerEntry.SetFilter("Posting Date", '<= %1', gCutDate);
-                //ItemLedgerEntry.SetFilter("Invoiced Quantity", '< 0');
             end;
 
             trigger OnAfterGetRecord()
@@ -133,9 +115,9 @@ report 50104 LCMReport
         {
             area(Content)
             {
-                group("Date")
+                group("Date Range")
                 {
-                    field("Cut Date"; gCutDate)
+                    field("Cut Off Date"; gCutDate)
                     {
                         ApplicationArea = All;
                     }
