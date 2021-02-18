@@ -6,8 +6,9 @@ report 50104 LCMReport
     DefaultLayout = RDLC;
     dataset
     {
-        dataitem(ItemLedgerEntry; "Item Ledger Entry")
+        dataitem(ValueEntry; "Value Entry")
         {
+            RequestFilterFields = "Item No.";
             column(ItemNo; "Item No.")
             {
 
@@ -32,6 +33,10 @@ report 50104 LCMReport
             {
 
             }
+            column(DocumentType; "Document Type")
+            {
+
+            }
             column(LastYear; gLastYear)
             {
 
@@ -40,23 +45,11 @@ report 50104 LCMReport
             {
 
             }
-            column(AverageSales; gAvSales)
-            {
-
-            }
-            column(Quantity; Quantity)
-            {
-
-            }
-            column(CostAmount; gCost)
-            {
-
-            }
             dataitem(Item; Item)
             {
-                DataItemLinkReference = ItemLedgerEntry;
+                DataItemLinkReference = ValueEntry;
                 DataItemLink = "No." = field("Item No.");
-
+                DataItemTableView = sorting("No.");
                 column(Description; Description)
                 {
 
@@ -74,38 +67,26 @@ report 50104 LCMReport
                     MonthSales: Decimal;
                     MonthInvoice: Decimal;
                 begin
-                    Clear(grecItemLedger);
+                    Clear(grecValueEntry);
                     gLastMonth := 0;
                     gLastYear := 0;
-                    grecItemLedger.SetRange("Item No.", "No.");  //SetRange(ItemLedger.field, item.field)
-                    grecItemLedger.SetFilter("Entry Type", '= Sale');
+                    grecValueEntry.SetRange("Item No.", "No.");  //SetRange(ItemLedger.field, item.field)
+                    grecValueEntry.SetFilter("Document Type", '= Sales Invoice');
                     if gCutDate <> 0D then
-                        grecItemLedger.SetFilter("Posting Date", '<= %1', gCutDate);
-                    grecItemLedger.SetCurrentKey("Posting Date");
-                    grecItemLedger.SetAscending("Posting Date", true); //Sort item ledger entry by posting date
-                    if grecItemLedger.FindLast() then begin // Find the latest record each item to get the last month
-                        gLastYear := DATE2DMY(grecItemLedger."Posting Date", 3);
-                        gLastMonth := Date2DMY(grecItemLedger."Posting Date", 2);
+                        grecValueEntry.SetFilter("Posting Date", '<= %1', gCutDate);
+                    grecValueEntry.SetCurrentKey("Posting Date");
+                    grecValueEntry.SetAscending("Posting Date", true); // Sort value entry by posting date
+                    if grecValueEntry.FindLast() then begin            // Find the latest sales record each item to get the last month
+                        gLastYear := DATE2DMY(grecValueEntry."Posting Date", 3);
+                        gLastMonth := Date2DMY(grecValueEntry."Posting Date", 2);
                     end;
                 end;
             }
             trigger OnPreDataItem()
             begin
                 if gCutDate <> 0D then
-                    ItemLedgerEntry.SetFilter("Posting Date", '<= %1', gCutDate);
+                    ValueEntry.SetFilter("Posting Date", '<= %1', gCutDate);
             end;
-
-            trigger OnAfterGetRecord()
-            begin
-                gCost := 0;
-                grecValue.SetRange("Item Ledger Entry No.", "Entry No.");
-                if grecValue.FindSet() then begin
-                    repeat
-                        gCost += grecValue."Cost Amount (Actual)" + grecValue."Cost Amount (Expected)"; //Cost amount should be actual + expect
-                    until grecValue.Next() = 0;
-                end;
-            end;
-
         }
     }
 
@@ -140,12 +121,8 @@ report 50104 LCMReport
 
     var
         gCutDate: Date;
-        grecItemLedger: Record "Item Ledger Entry";
+        grecValueEntry: Record "Value Entry";
         gLastMonth: Integer;
         gLastYear: Integer;
-        gItemIQuantity: Decimal;
-        gItemSales: Decimal;
-        gAvSales: Decimal;
-        grecValue: Record "Value Entry";
-        gCost: Decimal;
+
 }
