@@ -49,7 +49,7 @@ report 50104 LCMReport
             {
                 DataItemLinkReference = ValueEntry;
                 DataItemLink = "No." = field("Item No.");
-                DataItemTableView = sorting("No.");  // Set DataItemTableView to hide this dataitem in request page
+                DataItemTableView = sorting("No.");  // Set DataItemTableView to hide this dataitem in request
                 column(Description; Description)
                 {
 
