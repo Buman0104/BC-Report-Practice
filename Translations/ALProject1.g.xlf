@@ -198,6 +198,256 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Report OrderNotice - ReportColumn Bill_to_Name - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Report 4100559770 - Control 2991586698 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Group Totals</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report FADepreciation - Control GroupTotals - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 4100559770 - Control 2991586698 - Property 62802879" size-unit="char" translate="yes" xml:space="preserve">
+          <source> ,FA Class,FA Subclass,FA Location,Main Asset,Global Dimension 1,Global Dimension 2,FA Posting Group</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report FADepreciation - Control GroupTotals - Property OptionCaption</note>
+        </trans-unit>
+        <trans-unit id="Report 4100559770 - Control 2991586698 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies if you want the report to group fixed assets and print totals using the category defined in this field. For example, maintenance expenses for fixed assets can be shown for each fixed asset class.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report FADepreciation - Control GroupTotals - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Report 4177468815 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>FA Projected Value Copy</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report FA Projected Value Copy - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 4177468815 - Control 2346885236 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Options</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report FA Projected Value Copy - Control Options - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 4177468815 - Control 4106603340 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Depreciation Book</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report FA Projected Value Copy - Control DepreciationBook - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 4177468815 - Control 4106603340 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the code for the depreciation book to be included in the report or batch job.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report FA Projected Value Copy - Control DepreciationBook - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Report 4177468815 - Control 2882576599 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>First Depreciation Date</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report FA Projected Value Copy - Control FirstDeprDate - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 4177468815 - Control 2882576599 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the date to be used as the first date in the period for which you want to calculate projected depreciation.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report FA Projected Value Copy - Control FirstDeprDate - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Report 4177468815 - Control 1640459735 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Last Depreciation Date</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report FA Projected Value Copy - Control LastDeprDate - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 4177468815 - Control 1640459735 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the Fixed Asset posting date of the last posted depreciation.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report FA Projected Value Copy - Control LastDeprDate - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Report 4177468815 - Control 2056345591 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Number of Days</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report FA Projected Value Copy - Control NumberOfDays - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 4177468815 - Control 2056345591 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the length of the periods between the first depreciation date and the last depreciation date. The program then calculates depreciation for each period. If you leave this field blank, the program automatically sets the contents of this field to equal the number of days in a fiscal year, normally 360.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report FA Projected Value Copy - Control NumberOfDays - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Report 4177468815 - Control 792583929 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>No. of Days in First Period</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report FA Projected Value Copy - Control DaysInFirstPeriod - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 4177468815 - Control 792583929 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the number of days that must be used for calculating the depreciation as of the first depreciation date, regardless of the actual number of days from the last depreciation entry. The number you enter in this field does not affect the total number of days from the starting date to the ending date.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report FA Projected Value Copy - Control DaysInFirstPeriod - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Report 4177468815 - Control 2273641053 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Posted Entries From</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report FA Projected Value Copy - Control IncludePostedFrom - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 4177468815 - Control 2273641053 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the fixed asset posting date from which the report includes all types of posted entries.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report FA Projected Value Copy - Control IncludePostedFrom - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Report 4177468815 - Control 2991586698 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Group Totals</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report FA Projected Value Copy - Control GroupTotals - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 4177468815 - Control 2991586698 - Property 62802879" size-unit="char" translate="yes" xml:space="preserve">
+          <source> ,FA Class,FA Subclass,FA Location,Main Asset,Global Dimension 1,Global Dimension 2,FA Posting Group</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report FA Projected Value Copy - Control GroupTotals - Property OptionCaption</note>
+        </trans-unit>
+        <trans-unit id="Report 4177468815 - Control 2991586698 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies if you want the report to group fixed assets and print totals using the category defined in this field. For example, maintenance expenses for fixed assets can be shown for each fixed asset class.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report FA Projected Value Copy - Control GroupTotals - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Report 4177468815 - Control 433756905 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Copy to G/L Budget Name</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report FA Projected Value Copy - Control CopyToGLBudgetName - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 4177468815 - Control 433756905 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the name of the budget you want to copy projected values to.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report FA Projected Value Copy - Control CopyToGLBudgetName - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Report 4177468815 - Control 1815604755 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Insert Bal. Account</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report FA Projected Value Copy - Control InsertBalAccount - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 4177468815 - Control 1815604755 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies if you want the batch job to automatically insert fixed asset entries with balancing accounts.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report FA Projected Value Copy - Control InsertBalAccount - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Report 4177468815 - Control 4179148676 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Print per Fixed Asset</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report FA Projected Value Copy - Control PrintPerFixedAsset - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 4177468815 - Control 4179148676 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies if you want the report to print information separately for each fixed asset.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report FA Projected Value Copy - Control PrintPerFixedAsset - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Report 4177468815 - Control 213604645 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Projected Disposal</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report FA Projected Value Copy - Control ProjectedDisposal - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 4177468815 - Control 213604645 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies if you want the report to include projected disposals: the contents of the Projected Proceeds on Disposal field and the Projected Disposal Date field on the FA depreciation book.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report FA Projected Value Copy - Control ProjectedDisposal - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Report 4177468815 - Control 797146823 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Print Amounts per Date</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report FA Projected Value Copy - Control PrintAmountsPerDate - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 4177468815 - Control 797146823 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies if you want the program to include on the last page of the report a summary of the calculated depreciation for all assets.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report FA Projected Value Copy - Control PrintAmountsPerDate - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Report 4177468815 - Control 492928361 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Use Accounting Period</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report FA Projected Value Copy - Control UseAccountingPeriod - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 4177468815 - Control 492928361 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies if you want the periods between the starting date and the ending date to correspond to the accounting periods you have specified in the Accounting Period table. When you select this field, the Number of Days field is cleared.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report FA Projected Value Copy - Control UseAccountingPeriod - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Report 4177468815 - NamedType 2074560088" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Number of Days must not be greater than %1 or less than 5.</source>
+          <note from="Developer" annotates="general" priority="2">1 - Number of days in fiscal year</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report FA Projected Value Copy - NamedType NumberOfDaysMustNotBeGreaterThanErr</note>
+        </trans-unit>
+        <trans-unit id="Report 4177468815 - NamedType 3463035426" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Projected Gain/Loss</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report FA Projected Value Copy - NamedType ProjectedGainLossTxt</note>
+        </trans-unit>
+        <trans-unit id="Report 4177468815 - NamedType 2830245879" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Group Total</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report FA Projected Value Copy - NamedType GroupTotalTxt</note>
+        </trans-unit>
+        <trans-unit id="Report 4177468815 - NamedType 1665040906" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Group Totals</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report FA Projected Value Copy - NamedType GroupTotalsTxt</note>
+        </trans-unit>
+        <trans-unit id="Report 4177468815 - NamedType 2642234806" size-unit="char" translate="yes" xml:space="preserve">
+          <source>%1 has been modified in fixed asset %2.</source>
+          <note from="Developer" annotates="general" priority="2">1 - FA Posting Group caption; 2- FA No.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report FA Projected Value Copy - NamedType HasBeenModifiedInFAErr</note>
+        </trans-unit>
+        <trans-unit id="Report 4177468815 - NamedType 2230854815" size-unit="char" translate="yes" xml:space="preserve">
+          <source> ,FA Class,FA Subclass,FA Location,Main Asset,Global Dimension 1,Global Dimension 2,FA Posting Group</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report FA Projected Value Copy - NamedType GroupCodeNameTxt</note>
+        </trans-unit>
+        <trans-unit id="Report 4177468815 - NamedType 1799216286" size-unit="char" translate="yes" xml:space="preserve">
+          <source>You must specify %1.</source>
+          <note from="Developer" annotates="general" priority="2">1 - G/L Budget Name caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report FA Projected Value Copy - NamedType YouMustSpecifyErr</note>
+        </trans-unit>
+        <trans-unit id="Report 4177468815 - NamedType 2826298686" size-unit="char" translate="yes" xml:space="preserve">
+          <source>You must create accounting periods until %1 to use 365 days depreciation and 'Use Accounting Periods'.</source>
+          <note from="Developer" annotates="general" priority="2">1 - Date</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report FA Projected Value Copy - NamedType YouMustCreateAccPeriodsErr</note>
+        </trans-unit>
+        <trans-unit id="Report 4177468815 - NamedType 2741096484" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Page</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report FA Projected Value Copy - NamedType PageNoLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 4177468815 - NamedType 1517744550" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Fixed Asset - Projected Value</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report FA Projected Value Copy - NamedType FAProjectedValueLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 4177468815 - NamedType 2873216379" size-unit="char" translate="yes" xml:space="preserve">
+          <source>FA Posting Date</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report FA Projected Value Copy - NamedType FAPostingDateLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 4177468815 - NamedType 3768353108" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Book Value</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report FA Projected Value Copy - NamedType BookValueLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 4177468815 - NamedType 3572119121" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Posted Entry</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report FA Projected Value Copy - NamedType PostedEntryLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 4177468815 - NamedType 2410138484" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Total</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report FA Projected Value Copy - NamedType TotalLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 4177468815 - NamedType 580459614" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Projected Amounts per Date</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report FA Projected Value Copy - NamedType ProjectedAmountsPerDateLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 4177468815 - NamedType 2708786229" size-unit="char" translate="yes" xml:space="preserve">
+          <source>FA Posting Date</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report FA Projected Value Copy - NamedType FABufferProjectionFAPostingDateLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 4177468815 - NamedType 2302630219" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Depreciation</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report FA Projected Value Copy - NamedType FABufferProjectionDepreciationLbl</note>
+        </trans-unit>
+        <trans-unit id="Report 4177468815 - NamedType 2989918382" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Fixed Asset - Projected Value</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report FA Projected Value Copy - NamedType FABufferProjectedValueLbl</note>
+        </trans-unit>
         <trans-unit id="PageExtension 3252898778 - Action 1418429579 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2747922353">
           <source>Students</source>
           <note from="Developer" annotates="general" priority="2"></note>
