@@ -353,16 +353,26 @@ report 50105 FADepreciation
         BeforeStartDate: Date;
         myBookvalue: Decimal;
     begin
-        DepredDays := CalcDepredDays(StartDate, LastDeprDate, DeprStartDate);
-        RemainDays := CalcRemainDays(StartDate, LastDeprDate, DeprEndDate);
-        DeprPerUnit := Round(Cost / (30 * Months), 0.01);
-        myBookvalue := BookValue - Round((DepredDays * DeprPerUnit), 1);
+        if StartDate > DeprEndDate then begin
+            DepredDays := 30 * Months;
+            RemainDays := 0;
+        end
+        else begin
+            DepredDays := CalcDepredDays(StartDate, LastDeprDate, DeprStartDate);
+            RemainDays := CalcRemainDays(StartDate, LastDeprDate, DeprEndDate);
+        end;
+        if RemainDays = 0 then
+            DeprPerUnit := Round(Cost / (30 * Months), 0.001)
+        else
+            DeprPerUnit := Round((BookValue / RemainDays), 0.001, '=');
+        myBookvalue := Round(BookValue - Round((DepredDays * DeprPerUnit), 0.001), 1);
+        RemainDays -= DepredDays;
         for i := 1 to 12 do begin
             gDeprDates[i] := CalcDate('CM', StartDate);
             StartDate := CalcDate('CM+1M', StartDate);
             if (gDeprDates[i] > LastDeprDate) and (RemainDays > 0) then begin
                 if RemainDays > 30 then
-                    gDeprAmount[i] := Round(30 * (myBookValue / RemainDays), 1, '>')
+                    gDeprAmount[i] := Round(30 * DeprPerUnit, 1)
                 else
                     gDeprAmount[i] := myBookvalue;
                 RemainDays -= 30;
@@ -411,10 +421,7 @@ report 50105 FADepreciation
         RemainDays: Integer;
     begin
         BeforeStartDate := CalcDate('-CM-1D', StartDate);
-        if BeforeStartDate > LastDeprDate then
-            RemainDays := 30 * DiffMonth(BeforeStartDate, CalcDate('-CM-1D', DeprEndDate))
-        else
-            RemainDays := 30 * DiffMonth(LastDeprDate, CalcDate('-CM-1D', DeprEndDate));
+        RemainDays := 30 * DiffMonth(LastDeprDate, CalcDate('-CM-1D', DeprEndDate));
         if DeprEndDate <> CalcDate('CM', DeprEndDate) then
             RemainDays += Date2DMY(DeprEndDate, 1)
         else

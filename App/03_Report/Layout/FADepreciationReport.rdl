@@ -2821,7 +2821,7 @@ Fields!gGroupTotalsInd.Value = 6, Fields!GlobalDimension2Code.Value, Fields!gGro
                         <Filters>
                           <Filter>
                             <FilterExpression>=Fields!gAccuAmount.Value</FilterExpression>
-                            <Operator>GreaterThan</Operator>
+                            <Operator>NotEqual</Operator>
                             <FilterValues>
                               <FilterValue DataType="Integer">0</FilterValue>
                             </FilterValues>
@@ -2929,12 +2929,6 @@ End Function
         </Field>
         <Field Name="Description">
           <DataField>Description</DataField>
-        </Field>
-        <Field Name="unit">
-          <DataField>unit</DataField>
-        </Field>
-        <Field Name="unitFormat">
-          <DataField>unitFormat</DataField>
         </Field>
         <Field Name="gGroupTotalsInd">
           <DataField>gGroupTotalsInd</DataField>
