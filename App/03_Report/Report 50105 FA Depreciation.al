@@ -367,7 +367,6 @@ report 50105 FADepreciation
             DeprPerUnit := Round((BookValue / RemainDays), 0.001, '=');
         myBookvalue := Round(BookValue - Round((DepredDays * DeprPerUnit), 0.001), 1);
         RemainDays -= DepredDays;
-        Message('%1, %2', myBookvalue, RemainDays);
         for i := 1 to 12 do begin
             gDeprDates[i] := CalcDate('CM', StartDate);
             StartDate := CalcDate('CM+1M', StartDate);
